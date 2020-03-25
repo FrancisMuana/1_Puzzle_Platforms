@@ -842,3 +842,17 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.03.25-07.36.25:037][628]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
 [2020.03.25-07.36.25:057][629]LogPlayLevel: Display: Destroying online subsystem :Context_4
 [2020.03.25-07.36.25:057][629]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2020.03.25-07.43.34:874][641]LogSlate: Window 'Editor Preferences' being destroyed
+[2020.03.25-07.43.34:878][641]LogSlate: Window 'Editor Preferences' being destroyed
+[2020.03.25-07.43.37:068][860]LogUObjectHash: Compacting FUObjectHashTables data took   3.88ms
+[2020.03.25-08.17.31:584][461]LogHttp: Warning: 0000021D499A4900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B87277E28-4498-99F4-D3CE-E288B55E0A0D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.24.3-11590370%2B%2B%2BUE4%2BRelease-4.24&UserID=67b6d1764c633232c4390897aba2a249%7C835d6d88af5b440a81e7a61a2ab5708e%7Cf91083c1-3789-4ecd-9e19-df340d54769f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: request failed, libcurl error: 56 (Failure when receiving data from the peer)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x21d756fbf70 [can pipeline])
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 1 (Re-using existing connection! (#19) with host datarouter.ol.epicgames.com)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.172.15.98) port 443 (#19))
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 4 (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2020.03.25-08.17.31:586][461]LogHttp: Warning: 0000021D499A4900: libcurl info message cache 7 (Closing connection 19)
+[2020.03.25-08.17.31:918][462]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B87277E28-4498-99F4-D3CE-E288B55E0A0D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.24.3-11590370%2B%2B%2BUE4%2BRelease-4.24&UserID=67b6d1764c633232c4390897aba2a249%7C835d6d88af5b440a81e7a61a2ab5708e%7Cf91083c1-3789-4ecd-9e19-df340d54769f&AppEnvironment=datacollector-binary&UploadType=eteventstream
