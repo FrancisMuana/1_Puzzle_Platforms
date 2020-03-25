@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PuzzlePlatforms",
+			"Path": "C:\\Users\\Mark Muana\\source\\repos\\1_Puzzle_Platforms\\PuzzlePlatforms\\Source\\PuzzlePlatforms.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PuzzlePlatformsEditor",
+			"Path": "C:\\Users\\Mark Muana\\source\\repos\\1_Puzzle_Platforms\\PuzzlePlatforms\\Source\\PuzzlePlatformsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

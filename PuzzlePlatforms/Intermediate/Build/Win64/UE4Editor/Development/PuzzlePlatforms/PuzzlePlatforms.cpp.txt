@@ -1,0 +1,2 @@
+C:\Users\Mark Muana\source\repos\1_Puzzle_Platforms\PuzzlePlatforms\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\Definitions.PuzzlePlatforms.h
+C:\Users\Mark Muana\source\repos\1_Puzzle_Platforms\PuzzlePlatforms\Source\PuzzlePlatforms\PuzzlePlatforms.h
