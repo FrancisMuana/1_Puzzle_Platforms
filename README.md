@@ -84,3 +84,13 @@ To have a good multiplayer game, you've got to have the different players agree 
 # Detecting Where Code is Running
 
   * In this commit, See MovingPlatform.cpp and .h codes to detect if it is the Client or the Server
+
+# Authority and Replication
+  * In AMovingPlatform::Tick
+    * if has authority update property(ies)
+  * In AMovingPlatform::BeginPlay
+    * if has authority replicates property(ies) to the Clients
+  * In APuzzlePlatformsGameMode::BeginPlay
+    * if playercontroller index 0:
+      * remove PlayerController
+      * and its linked pawn
