@@ -83,4 +83,4 @@ To have a good multiplayer game, you've got to have the different players agree 
 
 # Detecting Where Code is Running
 
-  * In this commit, See PuzzlePlatform.cpp and .h codes to detect if it is the Client or the Server
+  * In this commit, See MovingPlatform.cpp and .h codes to detect if it is the Client or the Server
