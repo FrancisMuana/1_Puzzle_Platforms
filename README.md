@@ -80,3 +80,7 @@ To have a good multiplayer game, you've got to have the different players agree 
     * Copy/Paste path of UE4Editor.exe
     * Copy/Paste path of .uproject
     * Copy/Paste /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen -game -log
+
+# Detecting Where Code is Running
+
+  * In this commit, See PuzzlePlatform.cpp and .h codes to detect if it is the Client or the Server
