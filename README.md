@@ -94,3 +94,11 @@ To have a good multiplayer game, you've got to have the different players agree 
     * if playercontroller index 0:
       * remove PlayerController
       * and its linked pawn
+
+# Widgets For FVector Properties
+  * When making a widget for an FVector:
+    * UPROPERTY(EditAnywhere, Meta = (MakeEditWidget = true))
+
+  * See AMovingPlatform::Tick for the changes.
+      * Platform now move to a TargetLocation widget
+      * TargetLocation is a local location, We convert it to become a GlobalTargetLocation to match the Location FVector.

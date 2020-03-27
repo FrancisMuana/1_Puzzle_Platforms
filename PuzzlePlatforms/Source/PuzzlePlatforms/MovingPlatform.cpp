@@ -27,7 +27,9 @@ void AMovingPlatform::Tick(float DeltaSeconds)
 	if (HasAuthority())	// If it's the server update property(ies)
 	{
 		FVector Location = GetActorLocation();
-		Location += FVector(Speed * DeltaSeconds, 0.0f, 0.0f);
+		FVector GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation);	//	Transforming TargetLocation from local to GlobalTargetLocation
+		FVector Direction = (GlobalTargetLocation - Location).GetSafeNormal();
+		Location += (Speed * DeltaSeconds) * Direction;
 
 		SetActorLocation(Location);
 	}		
