@@ -24,26 +24,44 @@ void AMovingPlatform::BeginPlay()
 
 void AMovingPlatform::Tick(float DeltaSeconds)
 {
-	Super::Tick(DeltaSeconds);	// Call parent class tick function	
+	Super::Tick(DeltaSeconds);	// Call parent class tick function		
 
-	if (HasAuthority())	// If it's the server update property(ies)
-	{		
-		FVector Location{ GetActorLocation() };	
-
-		//	These are the 2 variable we have to compare to determine when to swap the variables GlobalStartLocation and GlobalTargetLocation
-		float JourneyLength = (GlobalTargetLocation - GlobalStartLocation).Size();	//	The length of the journey that the platform has to take
-		float JourneyTravelled = (GlobalStartLocation - Location).Size();	//	The length of how much the platform has travelled
-
-		if (JourneyTravelled >= JourneyLength)
+	if (ActiveTriggers > 0)
+	{
+		if (HasAuthority())	// If it's the server update property(ies)
 		{
-			//	You swap the GlobalStartLocation and GlobalTargetLocation so the platform will comeback
-			FVector Swap = GlobalStartLocation;
-			GlobalStartLocation = GlobalTargetLocation;
-			GlobalTargetLocation = Swap;			
-		}
-		FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
-		Location += (Speed * DeltaSeconds) * Direction;
+			FVector Location{ GetActorLocation() };
 
-		SetActorLocation(Location);
-	}		
+			//	These are the 2 variable we have to compare to determine when to swap the variables GlobalStartLocation and GlobalTargetLocation
+			float JourneyLength = (GlobalTargetLocation - GlobalStartLocation).Size();	//	The length of the journey that the platform has to take
+			float JourneyTravelled = (GlobalStartLocation - Location).Size();	//	The length of how much the platform has travelled
+
+			if (JourneyTravelled >= JourneyLength)
+			{
+				//	You swap the GlobalStartLocation and GlobalTargetLocation so the platform will comeback
+				FVector Swap = GlobalStartLocation;
+				GlobalStartLocation = GlobalTargetLocation;
+				GlobalTargetLocation = Swap;
+			}
+			FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
+			Location += (Speed * DeltaSeconds) * Direction;
+
+			SetActorLocation(Location);
+		}
+	}	
+}
+
+void AMovingPlatform::AddActiveTrigger()
+{
+	ActiveTriggers++;
+	UE_LOG(LogTemp, Warning, TEXT("Activated"))
+}
+
+void AMovingPlatform::RemoveActiveTrigger()
+{
+	if (ActiveTriggers > 0)
+	{
+		ActiveTriggers--;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("De-activated"))
 }

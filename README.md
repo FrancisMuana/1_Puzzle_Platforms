@@ -110,3 +110,16 @@ To have a good multiplayer game, you've got to have the different players agree 
 # Set Up A Simple Puzzle
   * Went on the ThirdPersonCharacter BP and tweaked the Jumping/Falling properties to have more control when jumping/falling
   * Went on the ThirdPersonExampleMap and added more movingplatforms and some ramps to create a challenging game.
+
+# Playing Over The Internet
+  * Setup Hamachi
+
+# Set Up A Platform Trigger
+  * Created the pressure pad
+
+# Handling Overlap Events In C++
+  * Event begin Overlap
+  * Event End Overlap
+
+# Activating Platforms From Triggers
+  * When step on triggers the platform moves
