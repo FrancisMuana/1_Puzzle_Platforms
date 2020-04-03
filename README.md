@@ -142,3 +142,5 @@ To have a good multiplayer game, you've got to have the different players agree 
     * Game Instances
 
 # Hosting Servers With ServerTravel
+
+# Joining Servers With ClientTravel
