@@ -130,3 +130,13 @@ To have a good multiplayer game, you've got to have the different players agree 
   * Init gets called only when starting the game
   * Constructor gets called when opening the editor and
   starting the game
+
+# GameInstance / Console Commands With Exec
+  * UFUNCTION(Exec) -> the function can be executed in the in-game console.
+  * Exec Compatible Classes:
+    * PlayerControllers
+    * Possessed Pawns
+    * HUDs
+    * Cheat Managers
+    * Game Modes
+    * Game Instances
