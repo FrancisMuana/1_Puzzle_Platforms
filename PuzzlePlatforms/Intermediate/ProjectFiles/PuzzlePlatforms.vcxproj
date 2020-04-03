@@ -283,7 +283,9 @@
     <ClInclude Include="..\..\Source\PuzzlePlatforms\PuzzlePlatforms.h" />
     <ClCompile Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsCharacter.cpp" />
     <ClInclude Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsCharacter.h" />
+    <ClCompile Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameInstance.cpp" />
     <ClCompile Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameMode.cpp" />
+    <ClInclude Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameInstance.h" />
     <ClInclude Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameMode.h" />
   </ItemGroup>
   <PropertyGroup>

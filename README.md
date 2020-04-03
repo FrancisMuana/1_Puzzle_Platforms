@@ -123,3 +123,10 @@ To have a good multiplayer game, you've got to have the different players agree 
 
 # Activating Platforms From Triggers
   * When step on triggers the platform moves
+
+# When To Use A GameInstance
+  * Game instance doesn't change with different maps. there is only 1 game instance per game. So it's perfect for any data that you want to persist from one level to the next.
+
+  * Init gets called only when starting the game
+  * Constructor gets called when opening the editor and
+  starting the game

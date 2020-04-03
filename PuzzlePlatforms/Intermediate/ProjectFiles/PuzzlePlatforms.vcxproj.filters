@@ -65,9 +65,15 @@
     <ClInclude Include="..\..\Source\PuzzlePlatforms\PlatformTrigger.h">
       <Filter>Source\PuzzlePlatforms</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameInstance.h">
+      <Filter>Source\PuzzlePlatforms</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\PuzzlePlatforms\PlatformTrigger.cpp">
+      <Filter>Source\PuzzlePlatforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PuzzlePlatforms\PuzzlePlatformsGameInstance.cpp">
       <Filter>Source\PuzzlePlatforms</Filter>
     </ClCompile>
   </ItemGroup>

@@ -23,9 +23,9 @@ void APuzzlePlatformsGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GEngine->GetFirstLocalPlayerController(GetWorld()), 0);
-	if (PlayerController)	//	if playercontroller index 0 is valid
-	{
-		UGameplayStatics::RemovePlayer(PlayerController, true);	//	remove the playercontroller index "0" and its pawn
-	}	
+	//APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GEngine->GetFirstLocalPlayerController(GetWorld()), 0);
+	//if (PlayerController)	//	if playercontroller index 0 is valid
+	//{
+	//	UGameplayStatics::RemovePlayer(PlayerController, true);	//	remove the playercontroller index "0" and its pawn
+	//}	
 }
